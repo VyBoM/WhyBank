@@ -54,7 +54,7 @@ export function AuthPage() {
 
 	return (
 		<div className={styles.content}>
-			<img src='../../assets/img/Logo.svg' alt='logo' className={styles.logo} />
+			<img src='src/assets/img/Logo.svg' alt='logo' className={styles.logo} />
 			<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
 				<div className={styles.form_div}>
 					<input type='email' placeholder='Email' {...register('email', {})} />
