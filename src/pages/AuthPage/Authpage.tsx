@@ -5,6 +5,8 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
+import logo from '../../assets/img/Logo.svg';
+
 export function AuthPage() {
 	const navigate = useNavigate();
 
@@ -54,7 +56,7 @@ export function AuthPage() {
 
 	return (
 		<div className={styles.content}>
-			<img src='src/assets/img/Logo.svg' alt='logo' className={styles.logo} />
+			<img src={logo} alt='logo' className={styles.logo} />
 			<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
 				<div className={styles.form_div}>
 					<input type='email' placeholder='Email' {...register('email', {})} />
