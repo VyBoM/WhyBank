@@ -22,7 +22,7 @@ export const MainPage = () => {
 							Оформить карту
 						</Link>
 					</div>
-					<h1 className={styles.h2}>ЛЮБЛЮ ТЕБЯ НАДЯ!❤️</h1>
+					<h1 className={styles.h2}>С нашей картой ты не пропадешь</h1>
 				</div>
 			</main>
 		</>
