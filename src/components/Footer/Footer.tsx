@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom';
 
-import ok from '../../assets/img/Ok.png';
 import styles from './Footer.module.scss';
+import logo from '../../assets/img/Logo.svg';
+import support from '../../assets/img/Support.png';
+import vk from '../../assets/img/VK.png';
+import tg from '../../assets/img/Telegram.png';
+import ok from '../../assets/img/Ok.png';
 
 export const Footer = () => {
 	return (
@@ -10,14 +14,14 @@ export const Footer = () => {
 				<div className={styles.footer_container}>
 					<div className={styles.footer}>
 						<div className={styles.logo}>
-							<img alt='logo' src='src\assets\img\Logo.svg' />
+							<img alt='logo' src={logo} />
 						</div>
 						<div className={styles.support}>
 							<span className={styles.support_text}>
 								Поддержка по России:
 								<p className={styles.support_media}>8 (914) 414-50-03</p>
 							</span>
-							<img src='src\assets\img\Support.png' alt='support' />
+							<img src={support} alt='support' />
 						</div>
 					</div>
 					<p className={styles.cookies}>
@@ -33,10 +37,10 @@ export const Footer = () => {
 						</p>
 						<ul className={styles.social}>
 							<Link to='https://vk.com/'>
-								<img src='src\assets\img\VK.png' alt='Вк' />
+								<img src={vk} alt='Вк' />
 							</Link>
 							<Link to='https://web.telegram.org/'>
-								<img src='src\assets\img\Telegram.png' alt='Телеграм' />
+								<img src={tg} alt='Телеграм' />
 							</Link>
 							<Link to='https://ok.ru/'>
 								<img src={ok} alt='Одноклассники' />
