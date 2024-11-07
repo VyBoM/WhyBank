@@ -1,0 +1,172 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	margin-top: 34px;
+	max-width: 1140px;
+	gap: 10px;
+}
+
+.block_profile {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 52px;
+}
+
+.profile_edit {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	gap: 25px;
+}
+
+.profile_icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ebebeb;
+	border-radius: 20px;
+	border: solid 1px black;
+	height: 300px;
+	width: 300px;
+}
+
+.question {
+	width: 200px;
+	height: 200px;
+}
+
+.profile_icon_edit {
+	background-color: #ebebeb;
+	border-radius: 20px;
+	border: solid 1px black;
+	height: 40px;
+	width: 200px;
+}
+
+.profile_icon_edit a {
+	margin: 10px;
+	font-weight: 550;
+	text-decoration: none;
+}
+
+.data {
+	display: flex;
+	flex-direction: column;
+	font-size: 24px;
+	font-weight: 550;
+	margin-top: 5px;
+	gap: 15px;
+}
+
+.data_block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ebebeb;
+	border-radius: 20px;
+	border: solid 1px black;
+	height: 60px;
+	width: 500px;
+}
+
+.data_CVs_block {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-bottom: 52px;
+}
+
+.data_CVs {
+	display: flex;
+	justify-content: center;
+	font-size: 24px;
+	font-weight: 550;
+}
+
+.data_block_CVs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	font-weight: 550;
+	margin: 0 auto;
+	background-color: #ebebeb;
+	border-radius: 20px;
+	border: solid 1px black;
+	height: 60px;
+	width: 1000px;
+	margin-bottom: 30px;
+}
+
+.attention_text {
+	margin: 0 auto;
+	max-width: 700px;
+	font-size: 24px;
+	color: #737373;
+	text-align: center;
+}
+
+.button_block {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.button_profile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	font-size: 24px;
+	width: 240px;
+	height: 70px;
+	background-color: #000000;
+	color: white;
+	border: 0;
+	cursor: pointer;
+}
+
+.button_profile:hover {
+	transform: scale(1.02);
+}
+
+@media (max-width: 900px) {
+	.content {
+		margin-top: 25px;
+	}
+
+	.block_profile {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		margin-bottom: 25px;
+		width: 300px;
+	}
+
+	.profile_icon {
+		margin-bottom: 20px;
+	}
+
+	.profile_icon_edit {
+		margin-bottom: 25px;
+	}
+
+	.data_CVs_block {
+		margin-bottom: 25px;
+	}
+
+	.data_block {
+		width: 300px;
+	}
+
+	.data_block_CVs {
+		width: 300px;
+		font-size: 14px;
+	}
+
+	.attention_text {
+		font-size: 18px;
+	}
+}

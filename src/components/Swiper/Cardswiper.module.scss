@@ -1,0 +1,21 @@
+.swiper {
+	width: 100%;
+	padding-top: 18px;
+	padding-bottom: 20px;
+}
+
+.swiper_slide {
+	background-position: center;
+	background-size: cover;
+	width: 300px;
+}
+
+.swiper_slide img {
+	display: block;
+	width: 100%;
+}
+
+.swiper-pagination-bullet {
+	background: #000000;
+}
+

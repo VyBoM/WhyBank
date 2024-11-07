@@ -1,0 +1,92 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	margin-top: 34px;
+	max-width: 1140px;
+	gap: 10px;
+}
+
+.panorama {
+	max-width: 1140px;
+	border-radius: 50px;
+	margin-bottom: 52px;
+}
+
+.panorama:hover {
+	transform: scale(1.01);
+}
+
+.panorama_card {
+	position: relative;
+	background: url(src/assets/img/Panorama-card.png) no-repeat;
+	background-size: contain;
+	border-radius: 50px;
+	margin-bottom: 52px;
+	width: 100%;
+	height: 251px;
+}
+
+.button_main {
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+	font-size: 24px;
+	width: 240px;
+	height: 70px;
+	top: 150px;
+	left: 50px;
+	background-color: #000000;
+	color: white;
+	border: 0;
+}
+
+.button_main a {
+	margin: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+.button_main:hover {
+	transform: scale(1.02);
+}
+
+@media (max-width: 900px) {
+	.content {
+		margin-top: 25px;
+	}
+
+	.h2 {
+		display: flex;
+		font-size: 20px;
+		font-weight: 550;
+	}
+
+	.panorama {
+		max-width: 360px;
+		border-radius: 20px;
+		margin-bottom: 34px;
+	}
+
+	.panorama_card {
+		display: grid;
+		place-content: center;
+		background: url(src/assets/img/Panorama-card-mobile.png) no-repeat;
+		border-radius: 20px;
+		height: 350px;
+		width: 350px;
+		margin-left: 5px;
+		margin-bottom: 24px;
+	}
+
+	.button_main {
+		position: static;
+		border-radius: 30px;
+		font-size: 16px;
+		width: 180px;
+		height: 50px;
+		background-color: #000000;
+		margin-bottom: 50px;
+	}
+}

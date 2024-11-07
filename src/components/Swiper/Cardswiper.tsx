@@ -1,0 +1,46 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+
+// import required modules
+import { EffectCoverflow, Pagination } from 'swiper/modules';
+
+import styles from '../../components/Swiper/Cardswiper.module.scss';
+
+export function Cardswiper() {
+	return (
+		<>
+			<Swiper
+				effect={'coverflow'}
+				grabCursor={true}
+				centeredSlides={true}
+				slidesPerView={'auto'}
+				coverflowEffect={{
+					rotate: 50,
+					stretch: 2,
+					depth: 100,
+					modifier: 1,
+					slideShadows: true
+				}}
+				pagination={true}
+				modules={[EffectCoverflow, Pagination]}
+				className='mySwiper'
+			>
+				<SwiperSlide className={styles.swiper_slide}>
+					<img src='src\assets\img\METAL.png' />
+				</SwiperSlide>
+
+				<SwiperSlide className={styles.swiper_slide}>
+					<img src='src\assets\img\KRIPTO.png' />
+				</SwiperSlide>
+
+				<SwiperSlide className={styles.swiper_slide}>
+					<img src='src\assets\img\LUXURY.png' />
+				</SwiperSlide>
+			</Swiper>
+		</>
+	);
+}
