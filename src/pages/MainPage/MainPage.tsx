@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './MainPage.module.scss';
 
 import panorama from '../../assets/img/Panorama.png';
+import panoramaCard from '../../assets/img/Panorama-card.png';
 
 export const MainPage = () => {
 	return (
@@ -14,6 +15,7 @@ export const MainPage = () => {
 						<img src={panorama} alt='Панорама' className={styles.panorama} />
 					</Link>
 					<div className={styles.panorama_card}>
+						<img src={panoramaCard} alt='Панорама' className={styles.panorama_card} />
 						<Link to='/card.html' className={styles.button_main}>
 							Оформить карту
 						</Link>
