@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+import ok from '../../assets/img/Ok.png';
 import styles from './Footer.module.scss';
 
 export const Footer = () => {
@@ -38,7 +39,7 @@ export const Footer = () => {
 								<img src='src\assets\img\Telegram.png' alt='Телеграм' />
 							</Link>
 							<Link to='https://ok.ru/'>
-								<img src='src/assets/img/Ok.png' alt='Одноклассники' />
+								<img src={ok} alt='Одноклассники' />
 							</Link>
 						</ul>
 					</div>
