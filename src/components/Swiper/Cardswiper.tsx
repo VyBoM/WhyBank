@@ -10,9 +10,9 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 import styles from '../../components/Swiper/Cardswiper.module.scss';
 
-import metal from '../../assets/img/METAL.png';
-import kripto from '../../assets/img/KRIPTO.png';
-import luxury from '../../assets/img/LUXURY.png';
+// import metal from '../../assets/img/METAL.png';
+// import kripto from '../../assets/img/KRIPTO.png';
+// import luxury from '../../assets/img/LUXURY.png';
 
 export function Cardswiper() {
 	return (
@@ -34,15 +34,15 @@ export function Cardswiper() {
 				className='mySwiper'
 			>
 				<SwiperSlide className={styles.swiper_slide}>
-					<img src={metal} />
+					<img src='src\assets\img\METAL.png' />
 				</SwiperSlide>
 
 				<SwiperSlide className={styles.swiper_slide}>
-					<img src={kripto} />
+					<img src='src\assets\img\KRIPTO.png' />
 				</SwiperSlide>
 
 				<SwiperSlide className={styles.swiper_slide}>
-					<img src={luxury} />
+					<img src='src\assets\img\LUXURY.png' />
 				</SwiperSlide>
 			</Swiper>
 		</>

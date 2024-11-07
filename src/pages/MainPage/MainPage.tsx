@@ -2,8 +2,6 @@ import { Link } from 'react-router-dom';
 
 import styles from './MainPage.module.scss';
 
-import panorama from '../../assets/img/Panorama.png';
-
 export const MainPage = () => {
 	return (
 		<>
@@ -11,7 +9,7 @@ export const MainPage = () => {
 				<div className={styles.content}>
 					<h1>Главная</h1>
 					<Link to='https://www.utorrent.com/intl/ru/downloads/win/'>
-						<img src={panorama} alt='Панорама' className={styles.panorama} />
+						<img src='src\assets\img\Panorama.png' alt='Панорама' className={styles.panorama} />
 					</Link>
 					<div className={styles.panorama_card}>
 						<Link to='/card.html' className={styles.button_main}>
