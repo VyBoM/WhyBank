@@ -13,7 +13,7 @@ export const ProfilePage = () => {
 	const [cvs, setCvs] = useState('');
 
 	const handleLogOut = async () => {
-		const { error } = await supabase.auth.signOut();
+		const {} = await supabase.auth.signOut();
 		navigate('/');
 	};
 
