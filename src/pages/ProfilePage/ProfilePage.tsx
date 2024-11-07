@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 
 import styles from './ProfilePage.module.scss';
 
+import question from '../../assets/img/Question.png';
+
 export const ProfilePage = () => {
 	const navigate = useNavigate();
 
@@ -52,7 +54,7 @@ export const ProfilePage = () => {
 					<div className={styles.block_profile}>
 						<div className={styles.profile_edit}>
 							<div className={styles.profile_icon}>
-								<img src='src/assets/img/Question.png' alt='Ава' className={styles.question} />
+								<img src={question} alt='Ава' className={styles.question} />
 							</div>
 						</div>
 						<div className={styles.data}>
